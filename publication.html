@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-187147137-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-187147137-1', { cookie_flags: 'SameSite=None;Secure' });
+</script>
+<meta name="author" content="Le Yang" />
+<meta name="description" content="Le Yang's Homepage">
+<meta name="keywords" content="Le Yang, homepage, NUS, CityU, Multi-Armed Bandits, Simulation Optimization, Machine Learning" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="bibtex.css" type="text/css" />
+<title>Publications</title>
+<script type="text/javascript">
+<!--
+// Toggle Display of BibTeX
+function toggleBibtex(articleid) {
+	var bib = document.getElementById('bib_'+articleid);
+	if (bib) {
+		if(bib.className.indexOf('bibtex') != -1) {
+		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+		}
+	} else {
+		return;
+	}
+}
+// Toggle Display of Abstract
+function toggleAbstract(articleid) {
+	var abstract = document.getElementById('abstract_'+articleid);
+	if (abstract) {
+		if(abstract.className.indexOf('abstract') != -1) {
+		abstract.className.indexOf('noshow') == -1?abstract.className = 'abstract noshow':abstract.className = 'abstract';
+		}
+	} else {
+		return;
+	}
+}
+-->
+</script>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Le Yang</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="publication.html">Research</a></div>
+<div class="menu-item"><a href="MA5243.html" class="current">Teaching</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research</h1> 
+</div>
+<!-- Generated from JabRef by PubList by Truong Nghiem at 11:51 on 2024.08.27. -->
+<h2>Publications</h2> 
+<ol class="biblist">
+
+
+
+<!-- Item: yang2025stochastically -->
+
+<li ><p>
+
+<b>Yang, L.</b>, Gao, S., Li, C. & Wang, Y., (In Press)
+
+&ldquo;Stochastically Constrained Best Arm Identification with Thompson Sampling,&rdquo;
+
+<i> <b>Automatica</b>.</i>
+
+
+
+
+
+<br />
+
+<a href="javascript:toggleAbstract('yang2025stochastically')">[abstract]</a>
+
+<a href="javascript:toggleBibtex('yang2025stochastically')">[bibtex]</a>
+
+<a href="">[url]</a>
+
+<a href="slides/BFAI.pdf">[slides]</a>
+
+
+
+
+
+
+
+
+
+</p>
+
+<div id="abstract_yang2025stochastically" class="abstract noshow">
+
+We consider the problem of the best arm identification in the presence of stochastic constraints, where there is a finite number of arms associated with multiple performance measures. The goal is to identify the arm that optimizes the objective measure subject to constraints on the remaining measures. We will explore the popular idea of Thompson sampling (TS) as a means to solve it. To the best of our knowledge, it is the first attempt to extend TS to this problem. We will design a TS-based sampling algorithm, establish its asymptotic optimality in the rate of posterior convergence, and demonstrate its superior performance using numerical examples.
+</div>
+
+<div id="yang2025stochastically" class="bibtex noshow">
+
+<pre>
+
+@article{,
+
+  author = {Yang, Le and Gao, Siyang and Li, Cheng and Wang, Yi},
+
+  title = {Stochastically Constrained Best Arm Identification with Thompson Sampling},
+
+  journal = {Automatica},
+
+  year = {},
+
+  volume = {},
+
+  number = {},
+
+  pages = {}
+
+}
+
+</pre>
+
+</div>
+
+</li>
+
+<!-- Item: yang2023improving -->
+
+<li ><p>
+
+<b>Yang, L.</b>, Gao, S. & Ho, C.,
+
+&ldquo;Improving the knowledge gradient algorithm,&rdquo;
+
+<i> <b>Advances in Neural Information Processing Systems (NeurIPS)</b>,</i>
+
+36,
+
+pp. 61747 - 61758,
+
+
+
+2023.
+
+
+
+
+
+<br />
+
+<a href="javascript:toggleAbstract('yang2023improving')">[abstract]</a>
+
+<a href="javascript:toggleBibtex('yang2023improving')">[bibtex]</a>
+
+<a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/c272409133942e2f4b7631c8cb7e507e-Abstract-Conference.html">[url]</a>
+
+<a href="slides/KG.pdf">[slides]</a>
+
+
+</p>
+
+<div id="abstract_yang2023improving" class="abstract noshow">
+
+The knowledge gradient (KG) algorithm is a popular policy for the best arm identification (BAI) problem. It is built on the simple idea of always choosing the measurement that yields the greatest expected one-step improvement in the estimate of the best mean of the arms. In this research, we show that this policy has limitations, causing the algorithm not asymptotically optimal. We next provide a remedy for it, by following the manner of one-step look ahead of KG, but instead choosing the measurement that yields the greatest one-step improvement in the probability of selecting the best arm. The new policy is called improved knowledge gradient (iKG). iKG can be shown to be asymptotically optimal. In addition, we show that compared to KG, it is easier to extend iKG to variant problems of BAI, with the ϵ-good arm identification and feasible arm identification as two examples. The superior performances of iKG on these problems are further demonstrated using numerical examples.
+</div>
+
+<div id="bib_yang2023improving" class="bibtex noshow">
+
+<pre>
+
+@inproceedings{yang2023improving,
+ author = {Yang, Le and Gao, Siyang and Ho, Chin Pang},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {61747--61758},
+ publisher = {Curran Associates, Inc.},
+ title = {Improving the Knowledge Gradient Algorithm},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/c272409133942e2f4b7631c8cb7e507e-Paper-Conference.pdf},
+ volume = {36},
+ year = {2023}
+}
+
+</pre>
+
+</div>
+
+</li>
+
+<!-- Item: yang2019risk -->
+
+<li ><p>
+
+<b>Yang, L.</b>, Zheng, Y. & Shi J.,
+
+&ldquo;Risk-Sensitive Stochastic Control with Applications to An Optimal Investment Problem under Correlated Noises,&rdquo;
+
+<i> <b>Chinese Control Conference (CCC)</b>,</i>
+
+38,
+
+pp. 1356 - 1363,
+
+
+
+2019.
+
+
+
+
+
+<br />
+
+<a href="javascript:toggleAbstract('yang2019risk')">[abstract]</a>
+
+<a href="javascript:toggleBibtex('yang2019risk')">[bibtex]</a>
+
+<a href="https://ieeexplore.ieee.org/document/8865743">[url]</a>
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+<div id="abstract_yang2019risk" class="abstract noshow">
+
+This paper is concerned with a risk-sensitive stochastic control problem, motivated by an optimal investment problem under correlated noises in the financial market. A new stochastic maximum principle for this kind of problem is obtained first, where the adjoint equations and maximum condition heavily depend on the risk-sensitive parameter and the correlation coefficient. Then the theoretical result is applied to the optimal investment problem with correlated noises, and the optimal investment strategy is obtained in a state feedback form, under a critical condition satisfied by the risk-sensitive parameter and the correlation coefficient. Numerical simulation and figures are given to explicitly illustrate the change and the sensitivity for optimal solution with respect to the risk-sensitive parameter and the correlation coefficient.
+
+</div>
+
+<div id="bib_yang2019risk" class="bibtex noshow">
+
+<pre>
+
+@inproceedings{yang2019risk,
+  author={Yang, Le and Zheng, Yueyang and Shi, Jingtao},
+  booktitle={2019 Chinese Control Conference (CCC)},
+  pages={1356--1363},
+  title={Risk-Sensitive Stochastic Control with Applications to An Optimal Investment Problem under Correlated Noises},
+  year={2019},
+  organization={IEEE}
+}
+
+
+</pre>
+
+</div>
+
+</li>
+
+
+</ol>
+
+
+<h2>Academic Exchanges</h2>
+<dl>
+
+<dd="text-indent: 0;">
+<a href="https://www.usc.edu">University of Southern California (USC)</a>
+<br>Visiting Scholar in the <a href="https://ise.usc.edu">Department of Industrial and Systems Engineering</a>, <a href="https://viterbischool.usc.edu/">School of Engineering</a>,
+<br>Advisor: <a href="https://viterbi.usc.edu/directory/faculty/Ross/Sheldon">Prof. Sheldon Mark Ross</a>
+<br>Research Interests: Multi-Armed Bandit, Online Learning
+<br>Feb 2024 – Jun 2024
+</dd>
+
+<br>	
+<br>
+
+<dd="text-indent: 0;">
+  <a href="https://www.cas.cn/">Chinese Academy of Sciences</a>
+  <br>Research Assistant in the <a href="http://www.amss.ac.cn/">Academy of Mathematics and Systems Science</a>
+  <br>Supervisor: <a href="https://sites.google.com/site/dachengyao/">Prof. Dacheng Yao</a>
+  <br>Research Interests: Risk-Sensitive, Inventory Control
+  <br>May 2019 – Aug 2019
+</dd>
+ 
+</dl>
+
+
+<h2>Conference Presentations</h2>
+
+<ul>
+
+<li><p>10 Dec 2023 – 16 Dec 2023: The 37th Conference on Neural Information Processing Systems (Poster)</p></li>
+<li><p>27 Jul 2019 – 30 Jul 2019: The 38th Chinese Control Conference (Oral)</p></li>
+</ul>
+	
+<h2>Academic Service (Reviewer)</h2>
+
+<ul>
+
+<li><p>IEEE Transactions on Automation Science and Engineering</p></li>
+</ul>
+	
+<div id="subtitle"></div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
